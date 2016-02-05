@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><jboss-deployment-structure xmlns="urn:jboss:deployment-structure:1.1">
+    <ear-subdeployments-isolated>false</ear-subdeployments-isolated>
+    <deployment>
+        <exclusions>
+            <module name="org.apache.log4j"/>
+        </exclusions>
+   
+    </deployment>
+    <sub-deployment name="OnlineShopApplication-war.war">
+        <exclusions>
+            <module name="org.apache.log4j"/>
+        </exclusions>
+      
+    </sub-deployment>
+    <sub-deployment name="OnlineShopApplication-ejb.jar">
+        <exclusions>
+            <module name="org.apache.log4j"/>
+        </exclusions>
+     
+    </sub-deployment>
+</jboss-deployment-structure>
